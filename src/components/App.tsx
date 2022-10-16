@@ -5,6 +5,7 @@ import Clock from './Clock';
 import axios, { AxiosError } from 'axios';
 import dayjs from 'dayjs';
 import { NoticeBar } from 'antd-mobile';
+import { Current } from 'models/Current';
 
 const App = () => {
   const [serverCurrent, setServerCurrent] = useState<string | undefined>();
@@ -16,7 +17,7 @@ const App = () => {
 
   const fetchCurrentTask = async () => {
     try {
-      const res = await axios.get('http://192.168.0.4:58080/api/v1/current');
+      const res = await axios.get<Current>('http://192.168.0.4:58080/api/v1/current');
       setRefreshCurrentAt(() => dayjs());
       const { status, data } = res || {};
       if (status !== 200) {
