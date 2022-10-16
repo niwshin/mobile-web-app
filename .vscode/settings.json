@@ -1,3 +1,8 @@
 {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.preferences.importModuleSpecifier": "shortest",
+    "javascript.preferences.importModuleSpecifier": "shortest",
+    "prettier.configPath": ".prettierrc.json",
+    "prettier.useEditorConfig": false
 }

@@ -15,8 +15,8 @@
     "watch": "webpack --watch",
     "start": "run-p tsc:watch webpack:start",
     "lint": "eslint --cache src/",
-    "lint:eslint": "eslint --cache --fix src/",
-    "lint:prettier": "prettier --write .",
+    "lint:eslint": "eslint --fix src/",
+    "lint:prettier": "prettier --write src/",
     "lint:fix": "run-s lint:eslint lint:prettier",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "run-s build:dev start",
@@ -34,8 +34,12 @@
   "homepage": "https://github.com/niwshin/mobile-web-app#readme",
   "dependencies": {
     "antd-mobile": "^5.24.0",
+    "antd-mobile-icons": "^0.3.0",
+    "axios": "^1.1.3",
+    "dayjs": "^1.11.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
@@ -46,6 +50,7 @@
     "@babel/runtime": "^7.19.4",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.40.0",
     "@typescript-eslint/parser": "^5.40.0",
     "babel-loader": "^8.2.5",
