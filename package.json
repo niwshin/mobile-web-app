@@ -19,6 +19,7 @@
     "lint:prettier": "prettier --write .",
     "lint:fix": "run-s lint:eslint lint:prettier",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "run-s build:dev start",
     "prepare": "husky install"
   },
   "repository": {
