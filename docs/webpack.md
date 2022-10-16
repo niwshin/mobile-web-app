@@ -6,6 +6,10 @@
 
 - [webpack 公式](https://github.com/webpack/webpack-dev-server/blob/master/migration-v4.md)
 
+## webpack 公式の init
+
+[https://webpack.js.org/configuration/](https://webpack.js.org/configuration/) でインストールすると、 `npm autit fix` で critical が 5件ある。`webpack-cli` が依存している `@webpack-cli/generators` の依存パッケージで critical 5件だった。 `webpack-cli` の再インストールで復活。
+
 ## npm-run-all
 
 [npm-run-all](https://github.com/mysticatea/npm-run-all) を使えば同時実行できる。
