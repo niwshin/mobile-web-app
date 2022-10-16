@@ -8,7 +8,7 @@ import {
 } from 'antd-mobile-icons';
 
 const KaeruButton = (): ReactElement => {
-  const [data, setData] = useState({} as KaeruType);
+  const [data] = useState({} as KaeruType);
   const [tapped, setTapped] = useState(false);
   const onClick = () => {
     setTapped(true);

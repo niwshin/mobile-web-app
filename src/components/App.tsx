@@ -24,8 +24,8 @@ const App = () => {
       }
       setServerCurrent(data.current || '');
     } catch (e: unknown) {
-      (e as AxiosError<any>).response?.status;
-      setApiErrorText((e as AxiosError<any>).response?.statusText);
+      (e as AxiosError<unknown>).response?.status;
+      setApiErrorText((e as AxiosError<unknown>).response?.statusText);
     }
   };
 

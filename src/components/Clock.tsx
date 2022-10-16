@@ -1,5 +1,5 @@
 import { Space } from 'antd-mobile';
-import { GlobalOutline, LinkOutline } from 'antd-mobile-icons';
+import { GlobalOutline } from 'antd-mobile-icons';
 import dayjs from 'dayjs';
 import React from 'react';
 import useClock from '../hooks/useClock';
