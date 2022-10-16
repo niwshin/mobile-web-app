@@ -1,3 +1,6 @@
+/**
+ *TODO: 通知は配列じゃなくて key で key-value にすればデータの整合性を取りやすくなるはず。
+ **/
 import React, {
   createContext,
   ReactElement,
@@ -11,7 +14,7 @@ import React, {
 type NotifiCation = {
   type?: 'alert' | 'default' | 'error' | 'info' | undefined; // same as 'color' prop in NotifyBar
   content?: ReactNode | string;
-  key?: string; // not same as react key
+  key: string; // not same as react key
 };
 
 type Notifications = {

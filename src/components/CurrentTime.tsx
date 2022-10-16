@@ -54,6 +54,7 @@ const CurrentTime = () => {
             {
               type: 'error',
               content: 'サーバー時刻取得失敗',
+              key: 'server-fail-at-clock',
             },
           ],
         },
