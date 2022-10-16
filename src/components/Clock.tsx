@@ -1,20 +1,20 @@
 import { Space } from 'antd-mobile';
 import { GlobalOutline } from 'antd-mobile-icons';
 import dayjs from 'dayjs';
-import React from 'react';
+import React, { useContext } from 'react';
+import GlobalStore from '../store/GlobalStore';
 import useClock from '../hooks/useClock';
 
-interface ClockProps {
-  lastRefreshAt?: dayjs.Dayjs;
-  serverCurrentTime?: dayjs.Dayjs;
-}
-
-const Clock = ({ serverCurrentTime, lastRefreshAt }: ClockProps) => {
-  const now = useClock({ current: serverCurrentTime, lastRefreshAt });
+const Clock = () => {
+  const { globalStore } = useContext(GlobalStore);
+  const now = useClock({
+    current: globalStore.current,
+    lastRefreshAt: globalStore.lastRefreshedAt,
+  });
   return (
     <Space>
       {now?.format('YYYY-MM-DD HH:mm:ss')}
-      {serverCurrentTime?.isValid() ? (
+      {globalStore.lastRefreshedAt?.isValid() ? (
         <GlobalOutline color={'var(--adm-color-primary)'} />
       ) : (
         <GlobalOutline color={'var(--adm-color-weak)'} />
