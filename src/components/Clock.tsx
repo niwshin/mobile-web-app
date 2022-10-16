@@ -1,6 +1,5 @@
 import { Space } from 'antd-mobile';
 import { GlobalOutline } from 'antd-mobile-icons';
-import dayjs from 'dayjs';
 import React, { useContext } from 'react';
 import GlobalStore from '../store/GlobalStore';
 import useClock from '../hooks/useClock';
