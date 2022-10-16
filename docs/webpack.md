@@ -8,7 +8,7 @@
 
 ## webpack 公式の init
 
-[https://webpack.js.org/configuration/](https://webpack.js.org/configuration/) でインストールすると、 `npm autit fix` で critical が 5件ある。`webpack-cli` が依存している `@webpack-cli/generators` の依存パッケージで critical 5件だった。 `webpack-cli` の再インストールで復活。
+[https://webpack.js.org/configuration/](https://webpack.js.org/configuration/) でインストールすると、 `npm autit fix` で critical が 5件ある。`webpack-cli` が依存している `@webpack-cli/generators` の依存パッケージで critical 5件だった。`@webpack-cli/generators` を削除して `webpack-cli` の再インストールで復活。
 
 ## npm-run-all
 
