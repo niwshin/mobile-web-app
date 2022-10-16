@@ -1,3 +1,3 @@
 export type Current = {
-  current: string
-}
+  current: string;
+};
