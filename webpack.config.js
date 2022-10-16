@@ -40,6 +40,7 @@ module.exports = {
     hot: "only",
     static: {
       directory: path.join(__dirname, "dist"),
+      watch: true
     }
   },
 };
