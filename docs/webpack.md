@@ -10,3 +10,23 @@
 
 [npm-run-all](https://github.com/mysticatea/npm-run-all) を使えば同時実行できる。
 つまり、 `tsc --watch` しながら `webpack serve` できる
+
+## Error: createRoot(...): Target container is not a DOM element
+
+パス解決はリポジトリがrootのため、おかしいことに。
+
+- ダメだった例
+
+```JS
+    new HtmlWebpackPlugin({
+      template: "index.html", // ここがダメっぽい。
+    }),
+```
+
+- うまくいった例
+
+```JS
+    new HtmlWebpackPlugin({
+      template: "src/index.html", 
+    }),
+```

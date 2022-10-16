@@ -1,5 +1,5 @@
 import React, { memo } from "react";
 
-const App = () => <p>Hello World</p>;
+const App = () => <div>Hello World</div>;
 
 export default memo(App);
