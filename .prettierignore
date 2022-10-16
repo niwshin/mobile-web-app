@@ -1,0 +1,9 @@
+**/dist
+**/coverage
+**/node_modules
+**/.vscode/
+**/.html
+**/.git
+**/docs
+README.md
+LICENSE

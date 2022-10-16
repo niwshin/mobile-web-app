@@ -23,7 +23,7 @@ module.exports = {
               presets: [
                 "@babel/preset-env",
                 "@babel/preset-react",
-                "@babel/preset-typescript",  // <- 追加
+                "@babel/preset-typescript", // <- 追加
               ],
             },
           },
@@ -40,7 +40,7 @@ module.exports = {
     hot: "only",
     static: {
       directory: path.join(__dirname, "dist"),
-      watch: true
-    }
+      watch: true,
+    },
   },
 };
